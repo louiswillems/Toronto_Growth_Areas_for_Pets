@@ -11,9 +11,15 @@ Toronto Open Data: Licensed Dogs and Cats Reports for 2013 and 2017 https://www.
 
 FourSquare Api: 
 * to get number of pet stores/services per FSA
+* specifically, this query will be filtered to look for only the following two categoryIds:
+5032897c91d4c4b30a586d69=pet services
+4bf58dd8d48988d100951735= pet stores
+* a sample query looks like this:
+https://api.foursquare.com/v2/venues/explore?client_id=<id>&client_secret=<secret>E&v=X&ll=43.642960,-79.371613
+&radius=400&limit=100&categoryId=5032897c91d4c4b30a586d69,4bf58dd8d48988d100951735
 
 geopy: 
-* to get lat/long coordinates for each FSA
+* to get lat/long coordinates for each FSA, which is used when calling Foursquare API for each FSA
 
 Wikipedia: https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
 * to get neighbourhood names for each FSA 
