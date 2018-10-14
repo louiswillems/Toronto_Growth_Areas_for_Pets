@@ -1,0 +1,16 @@
+Methodology section which represents the main component of the report where you discuss and describe any exploratory 
+data analysis that you did, any inferential statistical testing that you performed, and what machine learnings were used and why.
+
+Clean up:
+* Check for nulls in all the dataframes imported and drop rows that were all null
+* check datatypes on imported dataframes and clean up as appopropriate (For example, the counts for dogs, cats and total pets registered were imported as object (string) and had to be converted to Float for numerical analysis
+* dropped all the extraneous columns from the Population / Census data set except for the FSA and Population in 2016
+* on Neighbourhood data scrapped from the Wikipedia page, I had to condense the neighbourhoods to get one row per FSA 
+* when merging the various datasets together, I merged on FSA and again dropped any null rows 
+* Outliers:
+   I did find out outlier in the dataset, which was FSA=M5W that had a population of only 15 people.  This is significantly lower than 
+   the population of any other FSA (the next lowest had a population of 2000) and would skew the results.  So I dropped this row
+   
+   
+  Exploratory Data Analysis
+   
