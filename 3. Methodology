@@ -12,5 +12,34 @@ Clean up:
    the population of any other FSA (the next lowest had a population of 2000) and would skew the results.  So I dropped this row
    
    
-  Exploratory Data Analysis
-   
+Exploratory Data Analysis
+* In the EDA, I calculated and added a number of new columns:
+PropTotal_2017: proportion of the licenese granted in Toronto in 2017 that were granted to this FSA
+PropDogs: of the licenses granted in this FSA, what percentage were granted for Dogs vs Cats?
+PetChange: Total Pets 2017 - Total Pets 2013
+PropTotal_2013: proportion of the licenese granted in Toronto in 2017 that were granted to this FSA
+PetChange_Prop: PropTotal_2017 - PropTotal_2013 (change in proportion of pets belong to this FSA)
+PerCapitaPetsTotal: pets/pop in FSA (number of new pets registered in FSA per person
+Venues: retrieved from FourSquare (total pet stores and services in FSA)
+PetServicesPerPerCapitaPet: Venues/PerCapitaPetsTotal rough estimate of how many services exist per PerCapitapet
+
+* I also grouped the data by the Borough to see if any additional trends popped out
+* After retrieving the FourSquare data on pet servivces/stores, I did a check to see how many pet stores were being counted as
+belonging to more than one FSA.  I found that only 2 stores were being counted twice and so decided it wasn't something I needed to clean up
+
+
+Machine Learning
+For this analysis, I used the KMeans algorithm to attempt to cluster FSA areas based on three factores:
+* Population
+* Total Pets registered in 2017
+* number of Existing Pet store/services
+
+I wanted to try to isolate FSAs which share characteristics suggesting that they're good candidates for a new pet store/service: 
+fairly high population, high number of pets and low number of existing services
+
+Since population, total pets and number of venues are all on very different scales, I used StandardScaler to scale the results based on 
+standard deviations from the mean
+
+To find the appropriate number of clusters, I used the visual Elbow method to find the point at which the score levels off -- meaning 
+that adding more clusters doesn't dramatically reduce the error any further.  I found that 6 clusters looked to be correct for this data
+
