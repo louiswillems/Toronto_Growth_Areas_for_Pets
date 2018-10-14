@@ -1,5 +1,4 @@
-Methodology section which represents the main component of the report where you discuss and describe any exploratory 
-data analysis that you did, any inferential statistical testing that you performed, and what machine learnings were used and why.
+Overview of clean up, EDA and machine learning processes used:
 
 Clean up:
 * Check for nulls in all the dataframes imported and drop rows that were all null
