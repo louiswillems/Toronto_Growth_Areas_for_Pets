@@ -5,7 +5,7 @@ Clean up:
 * check datatypes on imported dataframes and clean up as appopropriate (For example, the counts for dogs, cats and total pets registered were imported as object (string) and had to be converted to Float for numerical analysis
 * dropped all the extraneous columns from the Population / Census data set except for the FSA and Population in 2016
 * on Neighbourhood data scrapped from the Wikipedia page, I had to condense the neighbourhoods to get one row per FSA 
-* when merging the various datasets together, I merged on FSA and again dropped any null rows 
+* when merging the various datasets together, I merged on FSA and again dropped any null rows
 * Outliers:
    I did find out outlier in the dataset, which was FSA=M5W that had a population of only 15 people.  This is significantly lower than 
    the population of any other FSA (the next lowest had a population of 2000) and would skew the results.  So I dropped this row
@@ -40,5 +40,5 @@ Since population, total pets and number of venues are all on very different scal
 standard deviations from the mean
 
 To find the appropriate number of clusters, I used the visual Elbow method to find the point at which the score levels off -- meaning 
-that adding more clusters doesn't dramatically reduce the error any further.  I found that 6 clusters looked to be correct for this data
+that adding more clusters doesn't dramatically reduce the error any further.  I found that 12 clusters looked to be correct for this data
 
