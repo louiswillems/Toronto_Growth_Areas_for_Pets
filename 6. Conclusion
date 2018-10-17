@@ -1,1 +1,14 @@
 
+Conclusion
+---------
+
+In this project, I wanted to identify areas in Toronto that might be good candidates for opening a new pet store.  I pulled together
+information from a variety of sources - downloading csvs from Open Data portals, calling apis and scraping a website.  Compiling all 
+this diverse information provided a more complete picture about the various Toronto neighbourhoods, including population, number of new 
+pet licenses issued and number of existing venues.  Based on this data, I used the KMeans algorithm to try to cluster the FSAs and 
+identify areas that had high population, a high number of pet licenses and a low number of existing services. 
+
+This analysis suggested 5 FSAs (M2J, M9V,M1W, M6M, M6E, M9B) were the best candidates for a new pet store/service
+
+In particular, I would recommend focusing on M2J, located in the north-west of Toronto
+
