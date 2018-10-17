@@ -1,4 +1,5 @@
-Results of Study
+Results of Analysis
+-------------------
 
 Pet Ownership in Toronto 2017:
 * Largest # Licenses issued to areas that are outside downtown core: East York (M4C) and Etobicoke (M8V) rank highest
@@ -18,10 +19,22 @@ Pet Capita Pet Licensing (2017):
     * Parkdale/ Roncesvalles (M6R) 
     * Alderwood/Long Branch(M8W)
 
+Candidates for a new pet store/service
+---------------------------------------
 Identified 2 clusters that appear like good candidates for opening a new Pet Store:
 * these areas have 
     * Low services per capita pet
     * High number of licensed pets in 2017
     * Medium to High populations
 * the FSAs in these areas are located outside of the downtown core
+* Within these clusters, 5 FSAs jump out as particularly ideal for our purposes
+   cluster 4: 
+      M2J (Fairview, Henry Farm, Oriole) (north west of city)
+      M9V (Albion Gardens, Beaumond Heights, Humbergate, Jamestown, Mount Olive, Silverstone, South Steeles, Thistletown) (North east of city)
+      M1W (L'Amoreaux West, Steeles West) (north west of city)
+      M6M (Del Ray, Keelsdale, Mount Dennis, Silverthorn) (East end of city)
+   cluster 1: 
+      M6E (Caledonia-Fairbank) (East end of city)
+      M9B (Cloverdale, Islington, Martin Grove, Princess Gardens, West Deane Park) (East end of city)
+
 
